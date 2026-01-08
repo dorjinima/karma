@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karma Travel Bhutan - Authentic Bhutan Tour Packages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #d2691e; /* Bhutan orange */
+            --primary-dark: #a0521f;
+            --secondary: #2e4a2c; /* Bhutan green */
+            --light: #f8f5f0;
+            --dark: #222;
+            --gray: #6c757d;
+            --light-gray: #f8f9fa;
+            --border: #e9ecef;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+            --radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: var(--radius);
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #1f351d;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1da851;
+            transform: translateY(-3px);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin-left: 10px;
+        }
+
+        .logo-icon {
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            font-weight: 500;
+            color: var(--dark);
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            bottom: -5px;
+            left: 0;
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding-top: 160px;
+            padding-bottom: 100px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: var(--light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 40px 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+
+        /* Packages Section */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .package-card {
+            background-color: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .package-header {
+            background-color: var(--secondary);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .package-header h3 {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .package-duration {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .package-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .package-details {
+            padding: 25px;
+        }
+
+        .package-details ul {
+            margin-bottom: 25px;
+        }
+
+        .package-details ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+        }
+
+        .package-details ul li i {
+            color: var(--primary);
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+
+        .package-btns {
+            display: flex;
+            gap: 10px;
+        }
+
+        .package-btns .btn {
+            flex: 1;
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+
+        /* Honeymoon Packages */
+        .honeymoon {
+            background-color: var(--light);
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .about-features {
+            margin-top: 30px;
+        }
+
+        .about-features li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .about-features li i {
+            color: var(--primary);
+            margin-right: 10px;
+        }
+
+        /* Culture & Cuisine */
+        .culture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .culture-card {
+            background-color: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .culture-header {
+            background-color: var(--secondary);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .culture-content {
+            padding: 25px;
+        }
+
+        .culture-content ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+        }
+
+        .culture-content ul li i {
+            color: var(--primary);
+            margin-right: 10px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--light);
+        }
+
+        .testimonials-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            margin: 0 15px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        /* Car Rentals */
+        .car-rental-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: var(--shadow);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .car-rental-table th {
+            background-color: var(--secondary);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .car-rental-table td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .car-rental-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: white;
+            margin-bottom: 15px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--light-gray);
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer.active {
+            padding: 20px;
+            max-height: 500px;
+        }
+
+        /* Contact Form */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--primary);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+        }
+
+        .chat-btn {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .chat-btn:hover {
+            background-color: var(--primary-dark);
+            transform: scale(1.1);
+        }
+
+        .chat-box {
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            width: 350px;
+            background-color: white;
+            border-radius: var(--radius);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            display: none;
+        }
+
+        .chat-header {
+            background-color: var(--secondary);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-body {
+            padding: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .chat-message {
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 18px;
+            max-width: 80%;
+        }
+
+        .chat-message.bot {
+            background-color: var(--light-gray);
+            margin-right: auto;
+        }
+
+        .chat-message.user {
+            background-color: var(--primary);
+            color: white;
+            margin-left: auto;
+        }
+
+        .chat-input {
+            display: flex;
+            padding: 15px;
+            border-top: 1px solid var(--border);
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 20px 0;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero {
+                padding-top: 140px;
+                padding-bottom: 80px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .package-btns {
+                flex-direction: column;
+            }
+
+            .chat-box {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .packages-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .chat-box {
+                width: 280px;
+                right: -50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-mountain logo-icon"></i>
+                <h1>Karma Travel Bhutan</h1>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#packages">Tour Packages</a></li>
+                    <li><a href="#honeymoon">Honeymoon</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#culture">Culture</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="tel:+97517123456" class="btn btn-primary">Call Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Experience the Magic of Bhutan</h1>
+                <p>Discover the Land of the Thunder Dragon with authentic cultural experiences, scenic journeys, and reliable services. Let us craft your perfect Bhutanese adventure.</p>
+                <div class="hero-btns">
+                    <a href="#packages" class="btn btn-primary">View Tour Packages</a>
+                    <a href="#contact" class="btn btn-secondary">Customize Your Trip</a>
+                    <a href="https://wa.me/97517123456" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Authentic Cultural Experiences</h3>
+                    <p>Immerse in Tsechus, butter-lamp offerings, and dzong visits with respectful, culture-focused travel.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Scenic & Tranquil Journeys</h3>
+                    <p>Travel from Dochula Pass to Haa Valley with scenic stops, farm lunches, and peaceful forest walks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Reliable Car Rentals</h3>
+                    <p>Comfortable vehicles with local drivers for safe airport transfers, inter-city travel, and custom routes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Tour Packages -->
+    <section id="packages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Bhutan Tour Packages</h2>
+                <p>Curated itineraries blending culture, nature, and comfort</p>
+            </div>
+            <div class="packages-grid">
+                <!-- Package 1 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Essence of Bhutan — 5 Days</h3>
+                        <div class="package-duration">4 Nights / 5 Days</div>
+                        <div class="package-price">$1,299</div>
+                    </div>
+                    <div class="package-details">
+                        <p>Discover Paro and Thimphu with a Taktsang hike, craft markets, and folk heritage—ideal for first-time visitors.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Paro Taktsang (Tiger's Nest) hike</li>
+                            <li><i class="fas fa-check"></i> Thimphu sightseeing & markets</li>
+                            <li><i class="fas fa-check"></i> All meals & 3-star accommodation</li>
+                            <li><i class="fas fa-check"></i> Licensed English-speaking guide</li>
+                            <li><i class="fas fa-check"></i> All internal transportation</li>
+                        </ul>
+                        <div class="package-btns">
+                            <button class="btn btn-primary book-package" data-package="Essence of Bhutan">Book Now</button>
+                            <a href="https://wa.me/97517123456?text=Interested in Essence of Bhutan 5 Days package" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Rivers & Dzongs — 7 Days</h3>
+                        <div class="package-duration">6 Nights / 7 Days</div>
+                        <div class="package-price">$1,899</div>
+                    </div>
+                    <div class="package-details">
+                        <p>Explore Punakha valley, cross the suspension bridge, enjoy river picnics, and savor farm-stay meals.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Punakha Dzong & suspension bridge</li>
+                            <li><i class="fas fa-check"></i> Scenic Dochula Pass</li>
+                            <li><i class="fas fa-check"></i> Farmhouse lunch experience</li>
+                            <li><i class="fas fa-check"></i> River picnic & hiking</li>
+                            <li><i class="fas fa-check"></i> Cultural performances</li>
+                        </ul>
+                        <div class="package-btns">
+                            <button class="btn btn-primary book-package" data-package="Rivers & Dzongs">Book Now</button>
+                            <a href="https://wa.me/97517123456?text=Interested in Rivers & Dzongs 7 Days package" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 3 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>High Pass Trails — 9 Days</h3>
+                        <div class="package-duration">8 Nights / 9 Days</div>
+                        <div class="package-price">$2,499</div>
+                    </div>
+                    <div class="package-details">
+                        <p>Experience Dochula and Haa Valley, village walks, monastery music, and optional day hikes.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Haa Valley exploration</li>
+                            <li><i class="fas fa-check"></i> Monastery visits with local music</li>
+                            <li><i class="fas fa-check"></i> Village cultural interactions</li>
+                            <li><i class="fas fa-check"></i> Optional day hikes</li>
+                            <li><i class="fas fa-check"></i> Luxury accommodation options</li>
+                        </ul>
+                        <div class="package-btns">
+                            <button class="btn btn-primary book-package" data-package="High Pass Trails">Book Now</button>
+                            <a href="https://wa.me/97517123456?text=Interested in High Pass Trails 9 Days package" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Honeymoon Packages -->
+    <section class="honeymoon" id="honeymoon">
+        <div class="container">
+            <div class="section-title">
+                <h2>Bhutan Honeymoon Packages</h2>
+                <p>Romantic escapes with cozy stays, private drivers, and intimate experiences</p>
+            </div>
+            <div class="packages-grid">
+                <!-- Honeymoon Package 1 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Whispers of the Himalayas</h3>
+                        <div class="package-duration">4 Nights / 5 Days</div>
+                        <div class="package-price">$1,599</div>
+                    </div>
+                    <div class="package-details">
+                        <p>Romantic Paro and Thimphu tour with a sunrise Taktsang hike, hot-stone bath, and private river picnic.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Sunrise Tiger's Nest hike</li>
+                            <li><i class="fas fa-check"></i> Private hot-stone bath</li>
+                            <li><i class="fas fa-check"></i> Romantic river picnic setup</li>
+                            <li><i class="fas fa-check"></i> Luxury boutique hotel</li>
+                            <li><i class="fas fa-check"></i> Private guide & driver</li>
+                        </ul>
+                        <div class="package-btns">
+                            <button class="btn btn-primary book-package" data-package="Whispers of the Himalayas">Book Now</button>
+                            <a href="https://wa.me/97517123456?text=Interested in Whispers of the Himalayas honeymoon package" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Honeymoon Package 2 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Moonlight Over Dzongs</h3>
+                        <div class="package-duration">6 Nights / 7 Days</div>
+                        <div class="package-price">$2,299</div>
+                    </div>
+                    <div class="package-details">
+                        <p>Punakha extension with riverside walks, suspension bridge visits, and farm-to-table dinners.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Private Punakha Dzong visit</li>
+                            <li><i class="fas fa-check"></i> Riverside candlelight dinner</li>
+                            <li><i class="fas fa-check"></i> Farm-to-table culinary experience</li>
+                            <li><i class="fas fa-check"></i> Luxury tented camp stay</li>
+                            <li><i class="fas fa-check"></i> Spa & wellness treatments</li>
+                        </ul>
+                        <div class="package-btns">
+                            <button class="btn btn-primary book-package" data-package="Moonlight Over Dzongs">Book Now</button>
+                            <a href="https://wa.me/97517123456?text=Interested in Moonlight Over Dzongs honeymoon package" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Karma Travel Bhutan</h2>
+                    <p>Karma Travel Bhutan is your trusted partner for unforgettable journeys in Bhutan. We craft experiences that blend comfort, authenticity, and cultural immersion, respecting Bhutan's traditions and pristine environment.</p>
+                    <p>From Paro's Himalayan peaks to Punakha's serene valleys and Thimphu's vibrant streets, our itineraries showcase Bhutan's essence—its people, festivals, and natural beauty.</p>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check-circle"></i> Licensed guides & certified tour planners</li>
+                        <li><i class="fas fa-check-circle"></i> Flexible itineraries—customize pace and activities</li>
+                        <li><i class="fas fa-check-circle"></i> Transparent pricing with no hidden costs</li>
+                        <li><i class="fas fa-check-circle"></i> 24/7 support during your Bhutan trip</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1544735716-3f3b5d5ae1c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Tiger's Nest Monastery, Bhutan">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture & Cuisine -->
+    <section id="culture">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience Bhutanese Culture & Cuisine</h2>
+            </div>
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <div class="culture-header">
+                        <h3>Bhutanese Cuisine</h3>
+                        <p>A Fiery Himalayan Delight</p>
+                    </div>
+                    <div class="culture-content">
+                        <p>Bhutanese food is simple yet bold, featuring rice, chilies, cheese, and fresh vegetables. Savor these iconic dishes during your Bhutan tour:</p>
+                        <ul>
+                            <li><i class="fas fa-pepper-hot"></i> Ema Datshi (Chili & Cheese Stew)</li>
+                            <li><i class="fas fa-drumstick-bite"></i> Phaksha Paa (Pork with Red Chilies)</li>
+                            <li><i class="fas fa-utensils"></i> Jasha Maru (Spicy Chicken Curry)</li>
+                            <li><i class="fas fa-seedling"></i> Red Rice</li>
+                            <li><i class="fas fa-mug-hot"></i> Suja (Butter Tea)</li>
+                            <li><i class="fas fa-wine-glass-alt"></i> Ara (Local Alcohol)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="culture-card">
+                    <div class="culture-header">
+                        <h3>Bhutanese Culture</h3>
+                        <p>Rooted in Happiness & Tradition</p>
+                    </div>
+                    <div class="culture-content">
+                        <p>Bhutan measures success through Gross National Happiness (GNH), reflecting its deep ties to spirituality, nature, and community.</p>
+                        <ul>
+                            <li><i class="fas fa-mask"></i> Tsechu Festivals: Vibrant masked dances</li>
+                            <li><i class="fas fa-place-of-worship"></i> Monasteries & Dzongs: Spiritual landmarks</li>
+                            <li><i class="fas fa-tshirt"></i> Traditional Dress: Gho and Kira</li>
+                            <li><i class="fas fa-paint-brush"></i> Art & Handicrafts: Intricate designs</li>
+                            <li><i class="fas fa-hands-helping"></i> Community Living: Harmonious lifestyle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimonials</h2>
+                <p>Real reviews from our happy travelers</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Seamless arrangements and a memorable Taktsang hike. The drivers were incredibly polite and knowledgeable about Bhutan's culture!"
+                    </div>
+                    <div class="testimonial-author">- Sarah J., Australia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Rentals -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Car Rentals in Bhutan</h2>
+                <p>Comfortable vehicles, local drivers, and competitive rates</p>
+            </div>
+            <table class="car-rental-table">
+                <thead>
+                    <tr>
+                        <th>Route</th>
+                        <th>Vehicle Type</th>
+                        <th>Approximate Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paro ↔ Thimphu</td>
+                        <td>SUV / Sedan</td>
+                        <td>From Nu 2,999</td>
+                    </tr>
+                    <tr>
+                        <td>Paro ↔ Punakha</td>
+                        <td>SUV / Van</td>
+                        <td>From Nu 6,499</td>
+                    </tr>
+                    <tr>
+                        <td>Full Day Tour (8 hrs)</td>
+                        <td>SUV with Driver</td>
+                        <td>From Nu 4,999</td>
+                    </tr>
+                    <tr>
+                        <td>Airport Transfer</td>
+                        <td>Sedan</td>
+                        <td>From Nu 1,999</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: center; margin-top: 20px; font-style: italic;">Final price depends on date & availability. <a href="#contact" style="color: var(--primary); font-weight: 600;">Get a quote</a></p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need a guide for traveling in Bhutan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, a licensed guide is recommended for safety, cultural insights, and monastery etiquette. Our Bhutan tour packages include certified local guides for all sightseeing days.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is the best time to visit Bhutan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Spring (March–May) and Autumn (September–November) offer ideal weather and vibrant Tsechu festivals. Winter provides clear skies, and summer is lush and green with fewer tourists.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you provide airport transfers?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer airport pick-up/drop-off and inter-city transfers with courteous, English-speaking drivers in SUVs, sedans, or vans depending on your group size.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I customize my tour itinerary?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can choose boutique or luxury stays, add spa time or farm-stays, and adjust the itinerary pace to suit your preferences. Contact us to create your perfect Bhutan experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Plan Your Bhutan Journey</h2>
+                <p>Get in touch to customize your perfect Bhutan experience</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Ready to experience the magic of Bhutan? Contact our travel experts to plan your perfect itinerary.</p>
+                    
+                    <div style="margin-top: 30px;">
+                        <p><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> <strong>Address:</strong> Norzin Lam, Thimphu, Bhutan</p>
+                        <p><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i> <strong>Phone:</strong> +975-17-123-456</p>
+                        <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> <strong>Email:</strong> info@karmatravel.bt</p>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/97517123456" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Get a Custom Quote</h3>
+                    <form id="quoteForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="package">Package of Interest</label>
+                            <select id="package">
+                                <option value="">Select a package</option>
+                                <option value="Essence of Bhutan">Essence of Bhutan - 5 Days</option>
+                                <option value="Rivers & Dzongs">Rivers & Dzongs - 7 Days</option>
+                                <option value="High Pass Trails">High Pass Trails - 9 Days</option>
+                                <option value="Honeymoon">Honeymoon Package</option>
+                                <option value="custom">Custom Package</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message / Requirements</label>
+                            <textarea id="message" placeholder="Tell us about your travel plans, group size, preferred dates, etc."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Karma Travel Bhutan</h3>
+                    <p>Your trusted partner for authentic Bhutanese travel experiences. We are committed to sustainable tourism that benefits local communities and preserves Bhutan's unique culture.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#packages">Tour Packages</a></li>
+                        <li><a href="#honeymoon">Honeymoon Packages</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Tour Packages</h3>
+                    <ul>
+                        <li><a href="#packages">Essence of Bhutan</a></li>
+                        <li><a href="#packages">Rivers & Dzongs</a></li>
+                        <li><a href="#packages">High Pass Trails</a></li>
+                        <li><a href="#honeymoon">Honeymoon Packages</a></li>
+                        <li><a href="#contact">Custom Tours</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Norzin Lam, Thimphu, Bhutan</li>
+                        <li><i class="fas fa-phone"></i> +975-17-123-456</li>
+                        <li><i class="fas fa-envelope"></i> info@karmatravel.bt</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Karma Travel Bhutan. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #ff6b6b;"></i> for Bhutan</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-btn" id="chatBtn">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <span>Karma Travel Bhutan</span>
+                <button id="closeChat" style="background: none; border: none; color: white; cursor: pointer;">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message bot">
+                    Hi there! 👋 How can I help you plan your Bhutan trip today?
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="sendChat" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Close other open FAQs
+                document.querySelectorAll('.faq-answer').forEach(item => {
+                    if(item !== answer) {
+                        item.classList.remove('active');
+                    }
+                });
+                
+                // Update icons for other FAQs
+                document.querySelectorAll('.faq-question i').forEach(itemIcon => {
+                    if(itemIcon !== icon) {
+                        itemIcon.className = 'fas fa-chevron-down';
+                    }
+                });
+                
+                // Toggle current FAQ
+                answer.classList.toggle('active');
+                
+                // Update icon
+                if(answer.classList.contains('active')) {
+                    icon.className = 'fas fa-chevron-up';
+                } else {
+                    icon.className = 'fas fa-chevron-down';
+                }
+            });
+        });
+        
+        // Package Booking
+        const bookButtons = document.querySelectorAll('.book-package');
+        
+        bookButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const packageName = this.getAttribute('data-package');
+                
+                // Scroll to contact form
+                document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+                
+                // Auto-select the package in the dropdown
+                const packageSelect = document.getElementById('package');
+                for(let i = 0; i < packageSelect.options.length; i++) {
+                    if(packageSelect.options[i].text.includes(packageName)) {
+                        packageSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+                
+                // Focus on name field
+                document.getElementById('name').focus();
+                
+                // Show confirmation message
+                showChatMessage(`I'd like to book the ${packageName} package. Can you provide more details?`, 'user');
+                setTimeout(() => {
+                    showChatMessage(`Great choice! The ${packageName} is one of our most popular packages. I'll help you with the booking process. Could you please fill out the form with your details?`, 'bot');
+                }, 1000);
+                
+                // Open chat widget
+                document.getElementById('chatBox').style.display = 'block';
+            });
+        });
+        
+        // Contact Form Submission
+        const quoteForm = document.getElementById('quoteForm');
+        quoteForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const package = document.getElementById('package').value;
+            
+            // Show success message
+            alert(`Thank you ${name}! We have received your inquiry for ${package ? 'the ' + package : 'a custom package'}. We will contact you at ${email} within 24 hours.`);
+            
+            // Reset form
+            quoteForm.reset();
+            
+            // Show confirmation in chat
+            showChatMessage(`Thank you for your inquiry, ${name}! Our team will contact you shortly with a customized itinerary and pricing for your Bhutan trip.`, 'bot');
+            document.getElementById('chatBox').style.display = 'block';
+        });
+        
+        // Chat Widget Functionality
+        const chatBtn = document.getElementById('chatBtn');
+        const chatBox = document.getElementById('chatBox');
+        const closeChat = document.getElementById('closeChat');
+        const chatBody = document.getElementById('chatBody');
+        const chatInput = document.getElementById('chatInput');
+        const sendChat = document.getElementById('sendChat');
+        
+        // Toggle chat box
+        chatBtn.addEventListener('click', () => {
+            chatBox.style.display = chatBox.style.display === 'block' ? 'none' : 'block';
+        });
+        
+        // Close chat box
+        closeChat.addEventListener('click', () => {
+            chatBox.style.display = 'none';
+        });
+        
+        // Send chat message
+        function sendChatMessage() {
+            const message = chatInput.value.trim();
+            if(message) {
+                showChatMessage(message, 'user');
+                chatInput.value = '';
+                
+                // Auto-reply after a delay
+                setTimeout(() => {
+                    const replies = [
+                        "I'd be happy to help you with that! Could you tell me more about your travel dates and group size?",
+                        "Thanks for your message! Our Bhutan tour packages start from $1,299 for 5 days. Would you like me to recommend a package based on your interests?",
+                        "Great question! Bhutan is beautiful year-round, but spring (March-May) and autumn (September-November) are particularly popular. When were you thinking of visiting?",
+                        "I can help you customize a perfect Bhutan itinerary. Do you prefer cultural experiences, hiking adventures, or a mix of both?"
+                    ];
+                    const randomReply = replies[Math.floor(Math.random() * replies.length)];
+                    showChatMessage(randomReply, 'bot');
+                }, 1000);
+            }
+        }
+        
+        // Send message on button click
+        sendChat.addEventListener('click', sendChatMessage);
+        
+        // Send message on Enter key
+        chatInput.addEventListener('keypress', function(e) {
+            if(e.key === 'Enter') {
+                sendChatMessage();
+            }
+        });
+        
+        // Function to show chat message
+        function showChatMessage(message, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `chat-message ${sender}`;
+            messageDiv.textContent = message;
+            chatBody.appendChild(messageDiv);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+        
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if(window.scrollY > 100) {
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+        
+        // Initialize chat with welcome message
+        setTimeout(() => {
+            showChatMessage("Welcome to Karma Travel Bhutan! I'm here to help you plan your dream trip to Bhutan. Feel free to ask me about tour packages, pricing, or travel tips!", 'bot');
+        }, 2000);
+    </script>
+</body>
+</html>
