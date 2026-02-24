@@ -2745,7 +2745,9 @@ ${specialMessage || 'None'}
                 // top price based on current currency
                 const topPrice = currentCurrency === 'USD' 
                     ? `$${pkg.priceUSD.toLocaleString()}` 
-                    : `Nu. ${Math.round(pkg.priceUSD * USD_TO_BTN).toLocaleString()}`;
+                    : `INR
+                    
+                . ${Math.round(pkg.priceUSD * USD_TO_BTN).toLocaleString()}`;
                 
                 // secondary price is completely removed (no small element)
                 
